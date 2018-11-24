@@ -1,0 +1,266 @@
+$black: #000000;
+$dark-grey: #272727;
+$grey: #A0A0A0;
+$light-grey: #D7D7D7;
+$off-white: #F9F9F9;
+$white: #FFFFFF;
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin min-height {
+    display: flex;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.hero-container {
+    @include space-between();
+    padding: 2% 8%;
+    font-weight: 800;
+    color: $white;
+    &__logo {
+        font-size: 18px;
+    }
+}
+
+#header {
+    background: url(./Assets/Images/ana-grave-156852-unsplash.jpg);
+    background-size: cover;
+    min-height: 112vh;
+}
+
+#shows {
+    background-color: $grey;
+    background-size: cover;
+}
+
+
+.nav {
+    @include space-between();
+    width: 16%;
+}
+
+
+.hero {
+    font-size: 18px;
+    color: $light-grey;
+    text-decoration: none;
+    &:hover {
+        background: rgba(0,0,0,0);
+        color: $black !important;
+        box-shadow: inset 0 0 0 2px $light-grey;
+    }
+    &.active {
+        color: $white;
+    }
+}
+
+
+.album {
+    @include flex-column();
+    color: $white;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+#date {
+    font-size: 84px;
+    font-weight: 800;
+}
+
+#name {
+    font-size: 36px;
+}
+
+#button {
+    width: 198px;
+    height: 55px;
+    margin: 38px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: $white;
+    border-radius: 4px;
+    border: 2px solid $white;
+    position: relative;
+    &:hover {
+        background-color: $light-grey;
+        border-color: $black;
+    }
+}
+
+#button-text {
+    position: absolute;
+    color: $white !important;
+    font-weight: 700;
+    font-size: 18px;
+    bottom: -5%;
+    left: 23%;
+    &:hover {
+        color: $black !important;
+    }
+}
+
+.about {
+    @include min-height();
+    margin: 0 10% 6% 8%;
+
+    &__left {
+        flex-direction: column;
+        padding-right: 4rem;
+    }
+
+    &__header {
+        @extend #music-header;
+        padding-top: 15%;
+    }
+
+    &__right {
+        align-items: center;
+        padding-top: 10%;
+
+    }
+}
+
+.paragraph-one {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.paragraph-two {
+    font-size: 20px;
+    line-height: 2em;
+    padding-top: 16%;
+    padding-right: 3rem;
+}
+
+#music {
+    @include min-height();
+    background-color: $off-white;
+}
+// I want to use BEM with the music section like in about section but it wasn't cooperating
+#music-header {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.music-left {
+    flex-direction: column;
+    margin: 5% 5% 10% 8%;
+}
+
+.music-photo {
+    width: 326px;
+    height: 326px;
+    object-fit: cover;
+    &:hover {
+        box-shadow: 20px 10px 5px $grey;
+        transition: all .5s ease-in-out;
+    }
+}
+
+.music-right {
+    font-size: 20px;
+    line-height: 2em;
+    padding: 17% 23% 10% 0;
+}
+
+#gallery{
+    @include flex-column();
+    min-height: 100vh;
+    flex-wrap: wrap;
+
+    &__header {
+        @extend #music-header;
+        padding: 2em 0 0 1.8em;
+    }
+}
+
+.photo-gallery {
+    margin: 3em 0 9em 7em;
+}
+.cropped-photos {
+    width: 285px;
+    height: 285px;
+    padding: .5em;
+    object-position: 0 100%;
+    object-fit: cover;
+}
+
+.blur img {
+    transition: all .5s ease;
+    &:hover {
+        filter: blur(3px);
+    }
+}
+
+#contact {
+    min-height: 110vh;
+    background-color: $dark-grey;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__header {
+        font-size: 64px;
+        font-weight: bold;
+        padding-left: 10%;
+        width: 100%
+    }
+}
+// I think my html is too messy to apply BEM correctly in this section (I applied BEM after I was finished...)
+.header-info-left{
+    font-weight: 700;
+    padding: 2em 3em 0 2em;
+}
+
+.header-info {
+    font-weight: 700;
+    padding: 2em 0 0 2em;
+}
+
+.contact-left {
+    margin: 10% 0 0 7%;
+}
+
+.contact-center {
+    padding: 15em 5em 0 0em;
+}
+
+.contact-right {
+    @extend .contact-center;
+}
+
+.contact-info {
+    font-size: 18px;
+    padding-left: 2rem;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+ul {
+    list-style: none;
+    li {
+        float: left;
+    }
+    .sm-icon {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        padding: 2em 5em 0 0;
+    }
+}
+
+#copywrite {
+    font-size: 10px;
+    padding: 8em 0 0 14em;
+}

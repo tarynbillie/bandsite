@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>The Bees Knees</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="hero-container">
+            <div class="hero-container__logo">
+                <a class="hero">THE BEES KNEES</a>
+            </div>
+            <div class="nav">
+                <a class="hero active" href="index.html">
+                    HOME
+                </a>
+                <a class="hero" href="Shows.html">
+                    SHOWS
+                </a>
+            </div>
+        </div>
+        <div class="album">
+            <div id="date">
+                <!--The date object in JS is built in and stores the current date and time - I'm not using time -->
+                <!--Note: the getMonth method returns 0 in Jan (dec returns number 11 - think array index), 1 in Feb etc. Add 1 to the getMonth method to display the correct date.-->
+                <script type="text/javascript">
+                    var d = new Date()
+                    document.write(d.getDate())
+                    document.write(".")
+                    document.write(d.getMonth() + 1)
+                    document.write(".")
+                    document.write(d.getFullYear())
+                </script>
+            </div>
+            <div id="name">
+                "Dusk" Debut Album Release
+            </div>
+            <a href="https://www.amazon.ca">
+                <button class="button">LISTEN NOW</button>
+            </a>
+        </div>
+
+    </header>
+    <section class="about">
+        <div class="about__left">
+            <h2 class="about__header">ABOUT</h2>
+
+            <p class="paragraph-one">The Bees Knees are an
+                unconventional, five-piece
+                musical phenomena that is
+                currently taking the world by
+                storm. Based in Toronto, Ontario,
+                their recent 5-people-playingone-guitar
+                rendition of Justin
+                Bieber’s “Despacito” recently
+                exploded on Youtube garnering
+                well over 40 million views in
+                under 3 weeks. </p>
+        </div>
+        <div class="about__right">
+            <p class="paragraph-two">New fans from around the world immediately fell in love with the
+                band’s organic, independent, sincere and honest original
+                songwriting, cover interpretations and beautifully filmed videos. For
+                the past 5 years, the band has built a massive following of
+                dedicated fans from around the world through their unique and
+                heartwarming approach to songwriting, filming and constant, open
+                interaction with everyone their music touches
+                The chemistry between the members of Meatwook Flack is
+                undeniable. Marshall, Sarah and Gianni’s individual vocal stylings
+                mesh seamlessly with Taylor’s haunting harmonies and keys all the
+                while soaring over epic melodic arrangements held together by
+                Joel Cassady’s driving and prolific percussion work.
+            </p>
+        </div>
+    </section>
+    <section id="music">
+        <div class="music-left">
+            <h2 id="music-header">MUSIC</h2>
+
+            <iframe style="border: 0; width: 331px; height: 451px;" src="https://bandcamp.com/EmbeddedPlayer/album=3737349002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless>
+                <a href="http://thebeeskneesmusic.bandcamp.com/album/live-at-ralphs-diner">Live at Ralph&#39;s Diner by
+                    The Bee&#39;s Knees</a></iframe>
+
+        </div>
+        <div class="music-right">
+            <p style="font-size: 24px;"><b>The Bees Knees</b> - Dusk</p>
+
+            <p>Dusk, The Bees Knees first full-length studio release, is a
+                concept album that details metaphorical experiences of
+                time, seasonal change, and the transient nature of life.
+                Whimsical guitars, crashing synths, and towering
+                baseliness merge in a caucophony of shoe-gaze, melodic
+                fuzz. Their songs don’t sound quite like anything else. The
+                Bees Knees use of both analog and digital tools creates a
+                raw hybrid energy. Throughout the album, drums land with
+                a spongy bounce, while pads exude rich notes of fungal
+                modular squelch. The combination lends much of the
+                album an organic texture that, in the vein of classic Aphex
+                Twin records, hints at technology from an ancient future—
+                one born of a great cataclysm of the past.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div id="gallery__header">
+            GALLERY
+        </div>
+        <!--These images take some time to load so I'm assuming that's why the blur effect takes longer than .5s-->
+        <div class="photo-gallery blur">
+            <img class="cropped-photos" src="../Assets/Images/ian-dooley-281855-unsplash.jpg" alt="Ian Dooley">
+            <img class="cropped-photos" src="../Assets/Images/ana-grave-156852-unsplash.jpg" alt="Ana Grave">
+            <img class="cropped-photos" src="../Assets/Images/hanny-naibaho-388579-unsplash.jpg" alt="Hanny Naibaho">
+            <img class="cropped-photos" src="../Assets/Images/bryan-minear-315773-unsplash.jpg" alt="Dusk Album Cover">
+            <img class="cropped-photos" src="../Assets/Images/mike-giles-5655-unsplash.jpg" alt="Mike Giles">
+            <img class="cropped-photos" src="../Assets/Images/melanie-van-leeuwen-83775-unsplash.jpg" alt="Melanie Van Leeuwen">
+            <img class="cropped-photos" src="../Assets/Images/francisco-moreno-110533-unsplash.jpg" alt="Francisco Moreno">
+            <img class="cropped-photos" src="../Assets/Images/felix-russell-saw-106848-unsplash.jpg" alt="Felix Russel">
+            <img class="cropped-photos" src="../Assets/Images/paulette-wooten-223050-unsplash.jpg" alt="Paulette Wooten">
+            <img class="cropped-photos" src="../Assets/Images/wesley-tingey-223059-unsplash (1).jpg" alt="Wesley Tingey">
+            <img class="cropped-photos" src="../Assets/Images/abigail-keenan-83615-unsplash.jpg" alt="Abigail Keenan">
+            <img class="cropped-photos" src="../Assets/Images/ciprian-boiciuc-330413-unsplash.jpg" alt="Ciprian Boiciuc">
+        </div>
+    </section>
+    <!-- sprint 2 START -->
+    <section id="comment">
+        <div id="comment__container">
+            <h2 id="comment__header">COMMENTS</h2>
+            <form id="comment-form">
+                <h2>Name</h2>
+                <input id="user-input" type="text" name="userNameInput" required /><br>
+                <!--required alert-->
+                <h2>Add a new comment</h2>
+                <textarea form="comment-form" rows="8" id="comment-input"></textarea><br>
+                <button id="comment-button" type="submit">POST COMMENT</button>
+                <div id="comment-result"></div>
+            </form>
+        </div>
+    </section>
+    <!-- sprint 2 END -->
+    <section id="contact">
+        <div id="contact__header">CONTACT</div>
+        <div class="managment">
+            <h3>THE BEES KNEES MANAGMENT</h3>
+
+            <p>Richard Rovner<br>
+                460 King Street West<br>
+                Toronto, Ontario<br>
+                M5V 1L7<br>
+                info@thebeesknees.com</p>
+        </div>
+
+        <div class="bookings">
+            <h3>US/SOUTH AMERICAN/JAPAN BOOKING AGENT</h3>
+            <p>
+                Artist Group International<br>
+                Marsha Vlasic<br>
+                marsha.vlasic@artistgrp.com<br>
+            </p>
+        </div>
+        <div class="agent">
+            <h3>UK/EU/AU BOOKING AGENT</h3>
+
+            <p>
+                William Morris Endeavor<br>
+                Entertainment<br>
+                Russell Warby<br>
+                RLW@wmeentertainment.com<br>
+            </p>
+        </div>
+        <div id="page-footer">
+
+            <li><a href="https://www.instagram.com"><img class="sm-icon" src="../Assets/Social Media Icons/png/Instagram@2x.png"
+                        alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com"><img class="sm-icon" src="../Assets/Social Media Icons/png/Facebook@2x.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com"><img class="sm-icon" src="../Assets/Social Media Icons/png/Twitter@2x.png"
+                        alt="Twitter"></a></li>
+
+            <p id="copywrite">Copyright The Bees Knees© 2018 All Rights Reserved</p>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="scroll-button" title="Go to top">TOP</button>
+
+    <script src="../script/Script.js"></script>
+</body>
+
+</html>
